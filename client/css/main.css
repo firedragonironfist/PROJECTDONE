@@ -1,0 +1,1577 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*-----------------------------------------------------HERO SECTION CSS CODE----------------------------------------------------------------*/
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  background-image: url("../images/Heroimgnew.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #3c3f40;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 50px 50px;
+}
+
+#logo {
+  margin-bottom: 2%;
+  width: 172px;
+  height: 107px;
+}
+
+.line {
+  width: 70%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 2%;
+}
+
+.links a {
+  font-family: "Inter", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding-right: 10px;
+}
+
+.links {
+  padding-bottom: 3%;
+}
+
+.sections {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-section {
+  width: 50vw;
+  margin: auto;
+}
+
+.left-section h1 {
+  color: black;
+  font-family: "Lato";
+  font-weight: 800;
+  font-size: 7vw;
+}
+
+.left-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 400;
+  width: 40vw;
+  padding-top: 2vh;
+}
+
+.Jetzt-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-size: 2vw;
+  width: 40vw;
+  height: 10vh;
+  background-color: #ffffff3e;
+  border: 2px solid white;
+  color: white;
+  margin: 7vh auto auto auto;
+}
+
+.right-section {
+  font-family: "Inter", sans-serif;
+  margin: auto;
+}
+
+.transparent {
+  color: rgb(255, 255, 255, 0.5);
+  font-family: "Lato";
+  font-weight: 800;
+  font-size: 7vw;
+}
+
+.below {
+  font-family: "Lato";
+  color: black;
+  font-weight: 800;
+  font-size: 7vw;
+}
+
+.whatsapp-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3vh;
+}
+
+.text-wa {
+  color: white;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 4vh;
+  padding-left: 1%;
+}
+
+#wussap {
+  width: 120px;
+  height: 120px;
+}
+
+/*-----------------------------------------------------PAKETE SECTION CSS CODE----------------------------------------------------------------*/
+
+.pakete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pak-head {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.7vw;
+  color: #3c3f40;
+  letter-spacing: 0.6vw;
+  padding-top: 3vh;
+}
+
+.secondcont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 600px;
+}
+
+.box {
+  background-color: #f1f1f1;
+  padding: 2.5vw;
+  border-radius: 5px;
+  text-align: center;
+  margin: 1vw 1vw;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.box h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1vw;
+  margin-bottom: 1vw;
+}
+
+.box p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1vw;
+}
+
+.box button {
+  margin-top: 2vh;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1vw;
+  color: white;
+  background-color: #3c3f40;
+  width: 6vw;
+  height: 5vh;
+  border-radius: 53px;
+}
+
+.verticalcont {
+  display: none;
+}
+/*-----------------------------------------------------CONTENT SECTION CSS CODE----------------------------------------------------------------*/
+
+.head2 {
+  text-align: center;
+}
+
+.dienstleistungen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin: 50px auto;
+  width: 80%;
+}
+
+.dienstleistungen img {
+  width: 50%;
+  height: 50%;
+  margin-right: 20px;
+}
+
+.dien-head {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5vw;
+  letter-spacing: 2px;
+  padding-bottom: 1vw;
+}
+
+.text-content p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5vw;
+  text-align: left;
+}
+
+/*-----------------------------------------------------FINAL SECTION CSS CODE----------------------------------------------------------------*/
+
+section.final {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.finalh1 {
+  padding-bottom: 2vh;
+}
+
+.finalh1 h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.5vw;
+  letter-spacing: 0.25vw;
+  padding-top: 8vh;
+  color: white;
+}
+
+.form {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3vw;
+  background-color: #3c3f40;
+  display: inline-block;
+  padding: 1vw;
+  border-radius: 5px;
+  width: 35%;
+  margin-bottom: 3vh;
+}
+
+.label {
+  margin-bottom: 1vh;
+  padding-right: 2vh;
+  text-align: left;
+  color: white;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input input {
+  margin-bottom: 1vh;
+  padding-right: 2vh;
+  border: 1px solid #ccc;
+  font-size: 1vw;
+  font-family: Arial, sans-serif;
+  border-radius: 6px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 8px;
+  width: 100%;
+}
+
+.input textarea {
+  border: 1px solid #ccc;
+  font-size: 1vw;
+  font-family: Arial, sans-serif;
+  border-radius: 6px;
+  background-color: white;
+  border-radius: 3px;
+  padding: 8px;
+  width: 100%;
+}
+
+.button-final button {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  padding-right: 1vw;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5vw;
+  width: 30%;
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2vh;
+  color: #000;
+}
+
+/*-----------------------------------------------------FOOTER SECTION CSS CODE----------------------------------------------------------------*/
+
+.footer {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  color: #fff;
+  background-color: #3C3F40;
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  align-items: center;
+  padding: 0 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.impressum{
+  padding-right: 30px;
+}
+
+.agb{
+  padding-right: 30px;
+}
+.footer-copyright{
+  padding-top: 20px;
+}
+
+.footer-text a img{
+  padding-top: 20px;
+  padding-right: 10px;
+  height:50px;
+  width:40px;
+}
+
+.text-wa{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.box h2{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.4vw;
+}
+
+.box p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.box button{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: white;
+  background-color: #3C3F40;
+  width: 150px;
+  height: 50px;
+  border-radius: 53px;
+}
+
+.text-content p{
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+/* Extra small screens (mobile) */
+@media only screen and (max-width: 480px) {
+  /*-----------------------------------------------------HERO SECTION CSS CODE----------------------------------------------------------------*/
+  .navbar {
+    background-color: #3c3f40;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 0 0;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .links a {
+    display: none;
+  }
+
+  .sections {
+    display: none;
+    flex-direction: row;
+  }
+
+  .moved {
+    display: none;
+  }
+
+  .left-section h1 {
+    color: black;
+    font-family: "Lato";
+    font-weight: 800;
+    font-size: 9vw;
+    text-align: center;
+    align-items: center;
+  }
+
+  .left-text {
+    font-family: "Inter", sans-serif;
+    font-size: 4vw;
+    font-weight: 400;
+    width: 65vw;
+    padding-top: 2vh;
+  }
+
+  .Jetzt-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 6vw;
+    width: 80vw;
+    height: 10vh;
+    background-color: #ffffff14;
+    border: 2px solid white;
+    color: white;
+  }
+  .whatsapp-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3vh;
+    padding-left: 18vw;
+  }
+  .text-wa {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    padding-left: 1%;
+  }
+  #wussap {
+    width: 40px;
+    height: 40px;
+  }
+
+  /*-----------------------------------------------------PAKETE SECTION CSS CODE----------------------------------------------------------------*/
+
+  .box p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+  }
+  .box button {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4vw;
+    color: white;
+    background-color: #3c3f40;
+    width: 30vw;
+    height: 6vh;
+    border-radius: 53px;
+  }
+  .box h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4.2vw;
+    margin-bottom: 1vw;
+  }
+  .secondcont {
+    display: none;
+  }
+  .pak-head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 8vw;
+    color: #3c3f40;
+    letter-spacing: 0.6vw;
+    padding-top: 3vh;
+  }
+  .verticalcont {
+    display: flex;
+    flex-direction: column;
+  }
+  /*-----------------------------------------------------CONTENT SECTION CSS CODE----------------------------------------------------------------*/
+
+  .dienstleistungen img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .dienstleistungen {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-content h1 {
+    padding-top: 2vw;
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .text-content p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.6vw;
+    text-align: center;
+  }
+
+  .finalh1 {
+    padding-bottom: 2vh;
+  }
+
+  .finalh1 h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.5vw;
+    letter-spacing: 0.25vw;
+    padding-top: 8vh;
+    color: white;
+  }
+
+  .form {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.3vw;
+    background-color: #3c3f40;
+    display: inline-block;
+    padding: 1vw;
+    border-radius: 5px;
+    width: 35%;
+    margin-bottom: 3vh;
+  }
+
+  .label {
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    text-align: left;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .input input {
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    border: 1px solid #ccc;
+    font-size: 1vw;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .input textarea {
+    border: 1px solid #ccc;
+    font-size: 1vw;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .button-final button {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-right: 1vw;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.5vw;
+    width: 30%;
+    font-family: "Arial", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2vh;
+    color: #000;
+  }
+
+  /*-----------------------------------------------------FINAL SECTION CSS CODE----------------------------------------------------------------*/
+  .finalh1 {
+    padding-bottom: 2vh;
+  }
+
+  .finalh1 h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 6vw;
+    letter-spacing: 0.25vw;
+    padding-top: 3vh;
+    color: white;
+  }
+
+  .form {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3vw;
+    background-color: #3c3f40;
+    display: inline-block;
+    padding: 2vw;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 3vh;
+  }
+
+  .label {
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    text-align: left;
+    color: white;
+    display: block;
+    margin-bottom: 1vw;
+  }
+
+  .input input {
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    border: 1px solid #ccc;
+    font-size: 1vw;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .input textarea {
+    border: 1px solid #ccc;
+    font-size: 1vw;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .button-final button {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-right: 1vw;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.5vw;
+    width: 40%;
+    font-family: "Arial", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5vh;
+    color: #000;
+  }
+}
+
+/* Small screens (tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /*-----------------------------------------------------HERO SECTION CSS CODE----------------------------------------------------------------*/
+  .navbar {
+    background-color: #3c3f40;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .sections {
+    display: none;
+    flex-direction: row;
+  }
+  .moved {
+    display: none;
+  }
+  .moved2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Jetzt-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 5vw;
+    width: 80vw;
+    height: 10vh;
+    background-color: #ffffff14;
+    border: 2px solid white;
+    color: white;
+    margin: 7vh auto auto auto;
+  }
+  .left-text {
+    font-family: "Inter", sans-serif;
+    font-size: 4vw;
+    font-weight: 400;
+    width: 65vw;
+    padding-top: 2vh;
+  }
+  .left-section h1 {
+    color: black;
+    font-family: "Lato";
+    font-weight: 800;
+    font-size: 9vw;
+  }
+  .whatsapp-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3vh;
+    padding-left: 16vw;
+  }
+  .text-wa {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 36px;
+    padding-left: 1%;
+  }
+  #wussap {
+    width: 60px;
+    height: 60px;
+  }
+
+  /*-----------------------------------------------------PAKETE SECTION CSS CODE----------------------------------------------------------------*/
+  .secondcont {
+    display: none;
+  }
+  .box p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+  }
+  .box button {
+    margin-top: 2vh;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+    color: white;
+    background-color: #3c3f40;
+    width: 25vw;
+    height: 6vh;
+    border-radius: 53px;
+  }
+  .box h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4.2vw;
+    margin-bottom: 1vw;
+  }
+  .pak-head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 8vw;
+    color: #3c3f40;
+    letter-spacing: 0.6vw;
+    padding-top: 3vh;
+  }
+  .verticalcont {
+    display: flex;
+    flex-direction: column;
+  }
+  /*-----------------------------------------------------CONTENT SECTION CSS CODE----------------------------------------------------------------*/
+
+  .dienstleistungen img {
+    margin: 0;
+    width: 100%;
+  }
+
+  .dienstleistungen {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-content h1 {
+    padding-top: 2vw;
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .text-content p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5vw;
+    text-align: center;
+  }
+  /*-----------------------------------------------------FINAL SECTION CSS CODE----------------------------------------------------------------*/
+  .finalh1 {
+    padding-bottom: 2vh;
+  }
+
+  .finalh1 h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 6vw;
+    letter-spacing: 0.25vw;
+    padding-top: 3vh;
+    color: white;
+  }
+
+  .form {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3vw;
+    background-color: #3c3f40;
+    display: inline-block;
+    padding: 2vw;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 3vh;
+  }
+
+  .label {
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    text-align: left;
+    color: white;
+    display: block;
+    margin-bottom: 1vw;
+  }
+
+  .input input {
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    border: 1px solid #ccc;
+    font-size: 2vw;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .input textarea {
+    border: 1px solid #ccc;
+    font-size: 1vw;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .button-final button {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-right: 1vw;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.5vw;
+    width: 40%;
+    font-family: "Arial", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5vh;
+    color: #000;
+  }
+}
+
+/* Medium screens (tablets and small laptops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  /*-----------------------------------------------------HERO SECTION CSS CODE----------------------------------------------------------------*/
+  .navbar {
+    background-color: #3c3f40;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .sections {
+    display: none;
+    flex-direction: row;
+  }
+  .moved {
+    display: none;
+  }
+
+  .moved2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Jetzt-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    width: 60vw;
+    height: 10vh;
+    background-color: #ffffff14;
+    border: 2px solid white;
+    color: white;
+    margin: 7vh auto auto auto;
+  }
+
+  .left-text {
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    width: 67vw;
+    padding-top: 2vh;
+  }
+
+  .left-section h1 {
+    color: black;
+    font-family: "Lato";
+    font-weight: 800;
+    font-size: 7vw;
+  }
+  .whatsapp-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3vh;
+    padding-left: 10vw;
+  }
+  .text-wa {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 26px;
+    padding-left: 1%;
+  }
+  #wussap {
+    width: 50px;
+    height: 50px;
+  }
+
+  /*-----------------------------------------------------PAKETE SECTION CSS CODE----------------------------------------------------------------*/
+  .box{
+    position: relative;
+    width: fit-content;
+    padding-bottom: 9vw;
+  }
+
+  .box button {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    color: white;
+    background-color: #3c3f40;
+    width: 12vw;
+    height: 4vh;
+    border-radius: 53px;
+  }
+
+  .box p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vw;
+  }
+  
+  .box h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3vw;
+  }
+  .pak-head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 6vw;
+    color: #3c3f40;
+    letter-spacing: 0.6vw;
+    padding-top: 3vh;
+  }
+  .verticalcont {
+    display: none;
+  }
+  /*-----------------------------------------------------CONTENT SECTION CSS CODE----------------------------------------------------------------*/
+  .dienstleistungen {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-content h1 {
+    padding-top: 2vw;
+    font-size: 3.5vh;
+    text-align: center;
+  }
+
+  .text-content p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.7vw;
+    text-align: center;
+  }
+  /*-----------------------------------------------------FINAL SECTION CSS CODE----------------------------------------------------------------*/
+  .finalh1 {
+    padding-bottom: 2vh;
+  }
+
+  .finalh1 h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 6vw;
+    letter-spacing: 0.25vw;
+    padding-top: 3vh;
+    color: white;
+  }
+
+  .form {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3vw;
+    background-color: #3c3f40;
+    display: inline-block;
+    padding: 2vw;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 3vh;
+  }
+
+  .label {
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    text-align: left;
+    color: white;
+    display: block;
+    margin-bottom: 1vw;
+  }
+
+  .input input {
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    border: 1px solid #ccc;
+    font-size: 2vw;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .input textarea {
+    border: 1px solid #ccc;
+    font-size: 1vw;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .button-final button {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-right: 1vw;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1.3vw;
+    width: 40%;
+    font-family: "Arial", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2vh;
+    color: #000;
+  }
+}
+
+/* Large screens (laptops) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  /*-----------------------------------------------------HERO SECTION CSS CODE----------------------------------------------------------------*/
+  .navbar {
+    background-color: #3c3f40;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .sections {
+    display: none;
+    flex-direction: row;
+  }
+
+  .moved {
+    display: none;
+  }
+
+  .moved2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Jetzt-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    width: 60vw;
+    height: 10vh;
+    background-color: #ffffff14;
+    border: 2px solid white;
+    color: white;
+    margin: 4vh auto auto auto;
+  }
+  .left-section h1 {
+    color: black;
+    font-family: "Lato";
+    font-weight: 800;
+    font-size: 7vh;
+  }
+
+  .left-text {
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    width: 40vw;
+    padding-top: 2vh;
+  }
+
+  .text-wa {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    padding-left: 1%;
+  }
+
+  /*-----------------------------------------------------PAKETE SECTION CSS CODE----------------------------------------------------------------*/
+  .box{
+    position: relative;
+    width: fit-content;
+    padding-bottom: 8vw;
+  }
+
+  .box button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    color: white;
+    background-color: #3c3f40;
+    width: 9vw;
+    height: 4vh;
+    border-radius: 53px;
+  }
+
+  .box h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2vw;
+  }
+
+  .box p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6vw;
+  }
+  .pak-head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 6vw;
+    color: #3c3f40;
+    letter-spacing: 0.6vw;
+    padding-top: 3vh;
+  }
+  .verticalcont {
+    display: none;
+  }
+  /*-----------------------------------------------------CONTENT SECTION CSS CODE----------------------------------------------------------------*/
+
+  .dienstleistungen {
+    display: flex;
+    flex-direction: column;
+  }
+  .text-content h1 {
+    padding-top: 2vw;
+    font-size: 3vh;
+    text-align: center;
+  }
+
+  .text-content p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2vw;
+    text-align: center;
+  }
+  /*-----------------------------------------------------FINAL SECTION CSS CODE----------------------------------------------------------------*/
+  .finalh1 {
+    padding-bottom: 2vh;
+  }
+
+  .finalh1 h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 6vw;
+    letter-spacing: 0.25vw;
+    padding-top: 3vh;
+    color: white;
+  }
+
+  .form {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3vw;
+    background-color: #3c3f40;
+    display: inline-block;
+    padding: 2vw;
+    border-radius: 5px;
+    width: 90%;
+    margin-bottom: 3vh;
+  }
+
+  .label {
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    text-align: left;
+    color: white;
+    display: block;
+    margin-bottom: 1vw;
+  }
+
+  .input input {
+    margin-bottom: 1vh;
+    padding-right: 2vh;
+    border: 1px solid #ccc;
+    font-size: 2vw;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .input textarea {
+    border: 1px solid #ccc;
+    font-size: 1vw;
+    font-family: Arial, sans-serif;
+    border-radius: 6px;
+    background-color: white;
+    border-radius: 3px;
+    padding: 8px;
+    width: 100%;
+  }
+
+  .button-final button {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    padding-right: 1vw;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 1.3vw;
+    width: 40%;
+    font-family: "Arial", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2vh;
+    color: #000;
+  }
+}
+
+/* Extra large screens (desktops) */
+@media only screen and (min-width: 1201px) and (max-width: 1305px) {
+  /*-----------------------------------------------------HERO SECTION CSS CODE----------------------------------------------------------------*/
+  .navbar {
+    background-color: #3c3f40;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 50px 50px;
+  }
+  .sections {
+    display: none;
+    flex-direction: row;
+  }
+  .moved {
+    display: flex;
+    flex-direction: row;
+  }
+  .moved2 {
+    display: none;
+  }
+  .left-text {
+    font-family: "Inter", sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    width: 40vw;
+    padding-top: 2vh;
+  }
+  .Jetzt-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 3vw;
+    width: 40vw;
+    height: 10vh;
+    background-color: #ffffff14;
+    border: 2px solid white;
+    color: white;
+    margin: 7vh auto auto auto;
+  }
+
+  .text-wa {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    padding-left: 1%;
+  }
+
+  #wussap {
+    width: 63px;
+    height: 63px;
+  }
+  /*-----------------------------------------------------PAKETE SECTION CSS CODE----------------------------------------------------------------*/
+  
+  .box{
+    position: relative;
+    width: fit-content;
+    padding-bottom: 8vw;
+  }
+
+  .box button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    color: white;
+    background-color: #3c3f40;
+    width: 9vw;
+    height: 4vh;
+    border-radius: 53px;
+  }
+
+  .box h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2vw;
+  }
+
+  .box p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5vw;
+  }
+
+  .pak-head {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 4vw;
+    color: #3c3f40;
+    letter-spacing: 0.6vw;
+    padding-top: 3vh;
+  }
+  .verticalcont {
+    display: none;
+  }
+  /*-----------------------------------------------------CONTENT SECTION CSS CODE----------------------------------------------------------------*/
+  .text-content p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6vw;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1306px) and (max-width: 1946px) {
+  /*-----------------------------------------------------HERO SECTION CSS CODE----------------------------------------------------------------*/
+  .sections {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-section {
+    width: 50vw;
+    margin: auto -10vw auto auto;
+  }
+  .right-section {
+    font-family: "Inter", sans-serif;
+    margin: auto;
+  }
+
+  .moved {
+    display: none;
+  }
+  .moved2 {
+    display: none;
+  }
+  .text-wa {
+    color: white;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 3vh;
+    padding-left: 1%;
+  }
+
+  #wussap {
+    width: 100px;
+    height: 100px;
+  }
+  /*-----------------------------------------------------PAKETE SECTION CSS CODE----------------------------------------------------------------*/
+  .box{
+    position: relative;
+    width: fit-content;
+    padding-bottom: 8vw;
+  }
+
+  .box button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    color: white;
+    background-color: #3c3f40;
+    width: 9vw;
+    height: 4vh;
+    border-radius: 53px;
+  }
+  
+  .box h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (min-width: 1946px) {
+  /*-----------------------------------------------------HERO SECTION CSS CODE----------------------------------------------------------------*/
+  .moved {
+    display: none;
+  }
+  .moved2 {
+    display: none;
+  }
+  .verticalcont {
+    display: none;
+  }
+  /*-----------------------------------------------------PAKETE SECTION CSS CODE----------------------------------------------------------------*/
+  .box{
+    position: relative;
+    width: fit-content;
+    padding-bottom: 8vw;
+  }
+
+  .box button {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1vw;
+    color: white;
+    background-color: #3c3f40;
+    width: 9vw;
+    height: 4vh;
+    border-radius: 53px;
+  }
+}
