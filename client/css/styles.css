@@ -73,6 +73,16 @@ h2 {
   color: #fff;
 }
 
+h3{
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
 .step {
   display: none;
 }
@@ -82,13 +92,15 @@ h2 {
 }
 
 button {
+  position: relative;
+  left: 40%;
   background-color: #fff;
   color: #000;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 button:hover {

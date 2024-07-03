@@ -33,59 +33,61 @@
       <div class="form-container">
         <form id="multiStepForm">
           <div id="step1" style="display: block">
-            <h2>Jetzt Kostenlos anfragen</h2>
+            <h2>Jetzt kostenlos anfragen</h2>
+            <h3>Welche Dienstleistung benötigen Sie?</h3>
             <select id="Jetzt" name="Jetzt">
               <option value="Umzug" id="Umzug">Umzug</option>
               <option value="Entrumpelung" id="Entrumpelung">
-                Entrumpelung
+                Entrümpelung
               </option>
             </select>
             <button type="button" id="nextButton">Weiter</button>
           </div>
           <div id="step2_Entrumpelung" style="display: none">
-            <h2>Entrümpelung formular 1</h2>
+            <h2>Entrümpelung</h2>
+            <h3>Bitte wählen Sie die Art der Entrümpelung aus:</h3>
             <select id="Freigabetyp" name="Freigabetyp">
               <option value="Haushaltsauflösung">Haushaltsauflösung</option>
               <option value="EinfacheEntsorgung">Einfache Entsorgung</option>
             </select>
-            <button type="button" id="next1Button">Next</button>
+            <button type="button" id="next1Button">Weiter</button>
           </div>
           <div id="step3_Entrumpelung" style="display: none">
-            <h2>Entrümpelung formular 2</h2>
-            <label for="Beschreibung">Beschreibung</label>
+            <h2>Beschreibung</h2>
+            <h3>Teilen Sie uns eine kurze Beschreibung über Ihre Entrümpelung mit:</h3>
             <input type="text" id="Beschreibung" name="Beschreibung" />
-            <button type="button" id="next2Button">Next</button>
+            <button type="button" id="next2Button">Weiter</button>
           </div>
           <div id="step2_Umzug" style="display: none">
-            <h2>Umzug Bilden</h2>
+            <h2>Umzug</h2>
             <label for="Stratort">Stratort:</label>
             <input type="text" id="Stratort" name="Startort" />
             <label for="zeilort">Zielort:</label>
             <input type="text" id="zielort" name="zielort" />
             <label for="datum">Datum </label>
             <input type="date" id="datum" name="datum" />
-            <label for="anzahl">Anzahl an Zimmer</label>
-            <input type="number" id="anzahl" name="anzahl" />
-            <label for="quadratmeter">Quadratmeter</label>
-            <input type="number" id="quadratmeter" name="quadratmeter" />
+            <label for="anzahl">Anzahl an Zimmer (max. 30)</label>
+            <input type="number" id="anzahl" name="anzahl" max="30"/>
+            <label for="quadratmeter">Quadratmeter (max. 999 m²)</label>
+            <input type="number" id="quadratmeter" name="quadratmeter" max="999"/>
             <label for="umzugArt">Art vom Umzug</label>
             <select id="umzugArt" name="umzugArt">
               <option value="firmenumzug">Firmenumzug</option>
-              <option value="privatumzug">Privatumzug</option>
+              <option value="privatumzug" selected>Privatumzug</option>
             </select>
             <label for="kostentraeger">Kostenträger</label>
             <input type="text" id="kostentraeger" name="kostentraeger" />
-            <button type="button" id="next3Button">Next</button>
+            <button type="button" id="next3Button">Weiter</button>
           </div>
           <div id="step3" style="display: none">
-            <h2>kontaktieren Bilden</h2>
+            <h2>Kontaktinformationen</h2>
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
-            <label for="message">Message:</label>
+            <label for="message">Nachricht:</label>
             <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
+            <button type="submit">Absenden</button>
           </div>
         </form>
       </div>

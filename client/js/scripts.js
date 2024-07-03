@@ -1,4 +1,4 @@
-const nextButton = document.getElementById("nextButton");
+      const nextButton = document.getElementById("nextButton");
       const next1Button = document.getElementById("next1Button");
       const next2Button = document.getElementById("next2Button");
       const next3Button = document.getElementById("next3Button");
