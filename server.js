@@ -35,7 +35,7 @@ app.post("/form/submit", (req, res) => {
     let emailText = '';
 
     if (Jetzt === 'Umzug') {
-      var Stratort = data[0].Startort;
+      var Stratort = data[0].Stratort;
       var zielort = data[0].zielort;
       var datum = data[0].datum;
       var anzahl = data[0].anzahl;

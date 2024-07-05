@@ -10,6 +10,11 @@
   flex-direction: column;
 }
 
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .hero {
   background-image: url("../images/Heroimgnew.png");
   background-size: cover;
