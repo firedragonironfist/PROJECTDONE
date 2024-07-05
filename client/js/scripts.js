@@ -12,7 +12,8 @@ const input5 = document.getElementById("anzahl");
 const input6 = document.getElementById("quadratmeter");
 const input7 = document.getElementById("umzugArt");
 const input8 = document.getElementById("kostentraeger");
-const input9 = document.getElementById("name");
+const input9 = document.getElementById("firstName");
+const input99 = document.getElementById("lastName");
 const input10 = document.getElementById("email");
 const input11 = document.getElementById("message");
 const step1 = document.getElementById("step1");
@@ -95,14 +96,16 @@ document
   .getElementById("multiStepForm")
   .addEventListener("submit", function (event) {
     event.preventDefault();
-    const namevalue = input9.value;
+    const firstNamevalue = input9.value;
+    const lastNamevalue = input99.value;
     const emailvalue = input10.value;
     const messagevalue = input11.value;
 
-    if (!namevalue || !emailvalue) {
+    if (!firstNamevalue || !lastNamevalue || !emailvalue) {
       alert("Please fill out all fields");
     } else {
-      data["name"] = namevalue;
+      data["firstName"] = firstNamevalue;
+      data["lastName"] = lastNamevalue;
       data["email"] = emailvalue;
       data["message"] = messagevalue;
       userInputs.push(data);

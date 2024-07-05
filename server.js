@@ -20,7 +20,8 @@ app.post("/form/submit", (req, res) => {
   const data = req.body;
   var Jetzt = data[0].Jetzt;
   var email = data[0].email;
-  var name = data[0].name;
+  var firstName = data[0].firstName;
+  var lastName = data[0].lastName;
   var message = data[0].message;
 
   const transporter = nodemailer.createTransport({
@@ -41,11 +42,11 @@ app.post("/form/submit", (req, res) => {
       var quadratmeter = data[0].quadratmeter;
       var umzugArt = data[0].umzugArt;
       var kostentraeger = data[0].kostentraeger;
-      emailText = `Jetzt: ${Jetzt}\nStartort: ${Stratort}\nZielort: ${zielort}\nDatum: ${datum}\nAnzahl: ${anzahl}\nQuadratmeter: ${quadratmeter}\nUmzugArt: ${umzugArt}\nKostentraeger: ${kostentraeger}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+      emailText = `Jetzt: ${Jetzt}\nStartort: ${Stratort}\nZielort: ${zielort}\nDatum: ${datum}\nAnzahl: ${anzahl}\nQuadratmeter: ${quadratmeter}\nUmzugArt: ${umzugArt}\nKostentraeger: ${kostentraeger}\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nMessage: ${message}`;
     } else if (Jetzt === 'Entrumpelung') {
       var Freigabetyp = data[0].Freigabetyp;
       var Beschreibung = data[0].Beschreibung;
-      emailText = `Jetzt: ${Jetzt}\nFreigabetyp: ${Freigabetyp}\nBeschreibung: ${Beschreibung}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+      emailText = `Jetzt: ${Jetzt}\nFreigabetyp: ${Freigabetyp}\nBeschreibung: ${Beschreibung}\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nMessage: ${message}`;
     }
 
     const mailOptions = {
