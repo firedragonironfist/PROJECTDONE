@@ -17,23 +17,13 @@ app.get('/form', (req, res) => {
 });
 
 app.post("/form/submit", (req, res) => {
-    const {
-      Freigabetyp,
-      Beschreibung,
-      Jetzt,
-      Startort,
-      zielort,
-      datum,
-      anzahl,
-      quadratmeter,
-      umzugArt,
-      kostentraeger,
-      name,
-      email,
-      message,
-    } = req.body;
-  
-    const transporter = nodemailer.createTransport({
+  const data = req.body;
+  var Jetzt = data[0].Jetzt;
+  var email = data[0].email;
+  var name = data[0].name;
+  var message = data[0].message;
+
+  const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         user: "firedragonironfist998@gmail.com",
@@ -44,8 +34,17 @@ app.post("/form/submit", (req, res) => {
     let emailText = '';
 
     if (Jetzt === 'Umzug') {
-      emailText = `Jetzt: ${Jetzt}\nStartort: ${Startort}\nZielort: ${zielort}\nDatum: ${datum}\nAnzahl: ${anzahl}\nQuadratmeter: ${quadratmeter}\nUmzugArt: ${umzugArt}\nKostentraeger: ${kostentraeger}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
+      var Stratort = data[0].Startort;
+      var zielort = data[0].zielort;
+      var datum = data[0].datum;
+      var anzahl = data[0].anzahl;
+      var quadratmeter = data[0].quadratmeter;
+      var umzugArt = data[0].umzugArt;
+      var kostentraeger = data[0].kostentraeger;
+      emailText = `Jetzt: ${Jetzt}\nStartort: ${Stratort}\nZielort: ${zielort}\nDatum: ${datum}\nAnzahl: ${anzahl}\nQuadratmeter: ${quadratmeter}\nUmzugArt: ${umzugArt}\nKostentraeger: ${kostentraeger}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
     } else if (Jetzt === 'Entrumpelung') {
+      var Freigabetyp = data[0].Freigabetyp;
+      var Beschreibung = data[0].Beschreibung;
       emailText = `Jetzt: ${Jetzt}\nFreigabetyp: ${Freigabetyp}\nBeschreibung: ${Beschreibung}\nName: ${name}\nEmail: ${email}\nMessage: ${message}`;
     }
 
@@ -58,6 +57,7 @@ app.post("/form/submit", (req, res) => {
   
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
+        console.log(error);
         return res.status(500).json({ success: false, error: error.toString() });
       }
       res.status(200).json({ success: true, info });

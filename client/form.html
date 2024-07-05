@@ -47,46 +47,64 @@
             <h2>Entrümpelung</h2>
             <h3>Bitte wählen Sie die Art der Entrümpelung aus:</h3>
             <select id="Freigabetyp" name="Freigabetyp">
-              <option value="Haushaltsauflösung">Haushaltsauflösung</option>
-              <option value="EinfacheEntsorgung">Einfache Entsorgung</option>
+              <option value="Haushaltsauflösung" id="Haushaltsauflösung">Haushaltsauflösung</option>
+              <option value="EinfacheEntsorgung" id="EinfacheEntsorgung">Einfache Entsorgung</option>
             </select>
             <button type="button" id="next1Button">Weiter</button>
           </div>
           <div id="step3_Entrumpelung" style="display: none">
             <h2>Beschreibung</h2>
-            <h3>Teilen Sie uns eine kurze Beschreibung über Ihre Entrümpelung mit:</h3>
+            <h3>
+              Teilen Sie uns eine kurze Beschreibung über Ihre Entrümpelung mit:
+            </h3>
             <input type="text" id="Beschreibung" name="Beschreibung" />
             <button type="button" id="next2Button">Weiter</button>
           </div>
           <div id="step2_Umzug" style="display: none">
             <h2>Umzug</h2>
-            <label for="Stratort">Stratort:</label>
+            <label for="Stratort"
+              >Startort (Staße, Hausnummer, PLZ, Ort):
+            </label>
             <input type="text" id="Stratort" name="Startort" />
-            <label for="zeilort">Zielort:</label>
+            <label for="zeilort">Zielort (Straße, Hausnummer, PLZ, Ort):</label>
             <input type="text" id="zielort" name="zielort" />
             <label for="datum">Datum </label>
             <input type="date" id="datum" name="datum" />
             <label for="anzahl">Anzahl an Zimmer (max. 30)</label>
-            <input type="number" id="anzahl" name="anzahl" max="30"/>
+            <input type="number" id="anzahl" name="anzahl" max="30" />
             <label for="quadratmeter">Quadratmeter (max. 999 m²)</label>
-            <input type="number" id="quadratmeter" name="quadratmeter" max="999"/>
+            <input
+              type="number"
+              id="quadratmeter"
+              name="quadratmeter"
+              max="999"
+            />
             <label for="umzugArt">Art vom Umzug</label>
             <select id="umzugArt" name="umzugArt">
               <option value="firmenumzug">Firmenumzug</option>
               <option value="privatumzug" selected>Privatumzug</option>
             </select>
             <label for="kostentraeger">Kostenträger</label>
-            <input type="text" id="kostentraeger" name="kostentraeger" />
+            <input
+              type="text"
+              id="kostentraeger"
+              name="kostentraeger"
+              placeholder="(Optional)"
+            />
             <button type="button" id="next3Button">Weiter</button>
           </div>
           <div id="step3" style="display: none">
             <h2>Kontaktinformationen</h2>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" />
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" />
             <label for="message">Nachricht:</label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="(Optional)"
+            ></textarea>
             <button type="submit">Absenden</button>
           </div>
         </form>
@@ -99,7 +117,10 @@
             <span class="datenschutz">Datenschutz</span>
           </div>
           <div class="footer-text">
-            <a href="https://www.instagram.com/alles.weg.mit.sw/" target="_blank">
+            <a
+              href="https://www.instagram.com/alles.weg.mit.sw/"
+              target="_blank"
+            >
               <img src="./images/instagram.png" alt="instagram" />
             </a>
             <a href="https://wa.me/message/APTBHQJKZTIHL1" target="_blank">
