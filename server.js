@@ -25,22 +25,12 @@ app.post("/form/submit", (req, res) => {
   var message = data[0].message;
 
     const transporter = nodemailer.createTransport({
-      host: "smtpout.secureserver.net",
-      port: 465,
-      secure: true,
+      host: "smtp.office365.com",
       auth: {
         user: "info@sauber-weg.de",
         pass: "cdfydzpdtfjkxjqd"
       },
     });
-
-  /* const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: "firedragonironfist998@gmail.com",
-        pass: "aqdwmmclfylmxcem",
-      },
-    }); */
     
     let emailText = '';
 
@@ -65,13 +55,6 @@ app.post("/form/submit", (req, res) => {
       subject: "Thank you for your submission!",
       text: emailText,
     };
-
-    /* const mailOptions = {
-      from: "firedragonironfist998@gmail.com",
-      to: email,
-      subject: "Multi-Step Form Submission",
-      text: emailText,
-    }; */
   
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
