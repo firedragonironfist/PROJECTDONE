@@ -320,7 +320,7 @@ section.final {
   width: 100%;
 }
 
-.button-final button {
+#senden {
   margin-top: 1vh;
   margin-bottom: 1vh;
   padding-right: 1vw;
