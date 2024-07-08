@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 /*-----------------------------------------------------HERO SECTION CSS CODE----------------------------------------------------------------*/
 
 .container {
@@ -425,6 +430,13 @@ section.final {
     justify-content: center;
     align-items: center;
     border-radius: 0 0 0 0;
+  }
+
+  #logo {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 133px;
+    height: 87px;
   }
 
   .line {

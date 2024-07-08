@@ -24,13 +24,23 @@ app.post("/form/submit", (req, res) => {
   var lastName = data[0].lastName;
   var message = data[0].message;
 
-  const transporter = nodemailer.createTransport({
+    const transporter = nodemailer.createTransport({
+      host: "smtpout.secureserver.net",
+      port: 465,
+      secure: true,
+      auth: {
+        user: "info@sauber-weg.de",
+        pass: "cdfydzpdtfjkxjqd"
+      },
+    });
+
+  /* const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
         user: "firedragonironfist998@gmail.com",
         pass: "aqdwmmclfylmxcem",
       },
-    });
+    }); */
     
     let emailText = '';
 
@@ -42,7 +52,7 @@ app.post("/form/submit", (req, res) => {
       var quadratmeter = data[0].quadratmeter;
       var umzugArt = data[0].umzugArt;
       var kostentraeger = data[0].kostentraeger;
-      emailText = `Jetzt: ${Jetzt}\nStartort: ${Stratort}\nZielort: ${zielort}\nDatum: ${datum}\nAnzahl: ${anzahl}\nQuadratmeter: ${quadratmeter}\nUmzugArt: ${umzugArt}\nKostentraeger: ${kostentraeger}\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nMessage: ${message}`;
+      emailText = `Jetzt: ${Jetzt}\nStratort: ${Stratort}\nZielort: ${zielort}\nDatum: ${datum}\nAnzahl: ${anzahl}\nQuadratmeter: ${quadratmeter}\nUmzugArt: ${umzugArt}\nKostentraeger: ${kostentraeger}\nFirst Name: ${firstName}\nLast Name: ${lastName}\nEmail: ${email}\nMessage: ${message}`;
     } else if (Jetzt === 'Entrumpelung') {
       var Freigabetyp = data[0].Freigabetyp;
       var Beschreibung = data[0].Beschreibung;
@@ -50,11 +60,18 @@ app.post("/form/submit", (req, res) => {
     }
 
     const mailOptions = {
+      from: "info@sauber-weg.de",
+      to: email,
+      subject: "Thank you for your submission!",
+      text: emailText,
+    };
+
+    /* const mailOptions = {
       from: "firedragonironfist998@gmail.com",
       to: email,
       subject: "Multi-Step Form Submission",
       text: emailText,
-    };
+    }; */
   
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
