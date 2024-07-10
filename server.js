@@ -1,6 +1,7 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
 const bodyParser = require("body-parser");
+require('dotenv').config();
 
 const app = express();  
 const port = 3000;
@@ -28,7 +29,7 @@ app.post('/submit', (req,res) => {
     host: "smtp.office365.com",
     auth: {
       user: "info@sauber-weg.de",
-      pass: "cdfydzpdtfjkxjqd"
+      pass: process.env.TRANSPORTER_PASSWORD
     },
   });
   
@@ -63,7 +64,7 @@ app.post("/form/submit", (req, res) => {
       host: "smtp.office365.com",
       auth: {
         user: "info@sauber-weg.de",
-        pass: "cdfydzpdtfjkxjqd"
+        pass: process.env.TRANSPORTER_PASSWORD
       },
     });
     
